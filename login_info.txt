@@ -17,3 +17,7 @@ FadeCandy Letter Serials:
 
 Small Letters:
 T - BJWUBXPHYIGPZPQT
+
+
+For Running the Processing script from Python via Command Line:
+https://py.processing.org/tutorials/command-line/
