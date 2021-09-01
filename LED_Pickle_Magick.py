@@ -1,6 +1,8 @@
 import opc
 import cv2
 import pickle
+import PIL
+
 from PIL import Image
 def video_function(video_name):
     pix = list()
@@ -8,7 +10,7 @@ def video_function(video_name):
 vidcap = cv2.VideoCapture(0)
 success,image = vidcap.read()
 success = True
-client = opc.Client('127.0.0.1:7890')
+client = opc.Client('10.80.31.24:7890')
 #ADDED MAPPED PIXEL
 mapped_pixel = list()
 with open('mapped_pixel.pickle', 'rb') as handle:
