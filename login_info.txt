@@ -1,0 +1,23 @@
+Raspbian Lite
+
+TviBit login info
+
+pi
+tv1b1t
+
+network on ethernet:
+ssh pi@10.80.31.24
+
+
+To get board serial numbers:
+tail -f /var/log/fcserver.log
+And to edit the registry:
+sudo nano /usr/local/bin/fcserver.json
+FadeCandy Letter Serials:
+
+Small Letters:
+T - BJWUBXPHYIGPZPQT
+
+
+For Running the Processing script from Python via Command Line:
+https://py.processing.org/tutorials/command-line/
