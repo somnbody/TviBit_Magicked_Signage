@@ -5,7 +5,7 @@ TviBit login info
 pi
 tv1b1t
 
-network on ethernet:
+connecting to rapsi network via ethernet:
 ssh pi@10.80.31.24
 
 

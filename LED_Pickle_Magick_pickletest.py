@@ -7,13 +7,26 @@ from PIL import Image
 def video_function(video_name):
     pix = list()
 # Locate and add the video file, temporarily using laptop camera as VideoCapture(0). The 0 is the camera. A file can be called here instead.
-vidcap = cv2.VideoCapture('AC_4.mov')
+vidcap = cv2.VideoCapture(0)
 success,image = vidcap.read()
 success = True
 client = opc.Client('10.80.31.24:7890')
+# initializing data to be stored in db
+mapped_pixel = {0, 1, 2}
+  
+# database
+db = {}
+db['mapped_pixel'] = mapped_pixel
+
+  
+# For storing
+b = pickle.dumps(db)       # type(b) gives <class 'bytes'>
+  
+
 #ADDED MAPPED PIXEL
 mapped_pixel = list()
-with open('mapped_pixel', 'rb') as handle:
+with open('mapped_pixel.pickle', 'rb') as handle:
+    f.seek(0)
     mapped_pixel = pickle.load(handle)
 try:
     while success:
