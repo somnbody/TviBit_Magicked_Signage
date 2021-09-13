@@ -6,7 +6,7 @@ pi
 tv1b1t
 
 connecting to rapsi network via ethernet:
-ssh pi@10.80.31.24
+ssh pi@10.80.31.22
 
 
 To get board serial numbers:
@@ -21,3 +21,5 @@ T - BJWUBXPHYIGPZPQT
 
 For Running the Processing script from Python via Command Line:
 https://py.processing.org/tutorials/command-line/
+
+sudo shutdown -h now
