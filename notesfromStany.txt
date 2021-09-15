@@ -1,0 +1,5 @@
+load all content
+run dot size
+set resolutions 
+osc processing
+touch osc - > pair with processing
